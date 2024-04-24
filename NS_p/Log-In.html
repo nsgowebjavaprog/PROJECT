@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Log-In.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <!-- <i class="fa-brands fa-telegram"></i> -->
+            <i class="fas fa-paper-plane"></i>
+            
+            <div class="input-group">
+                <lable>Full Name:</lable>
+                <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+                <span id="name-error"></span>
+            </div>
+
+            <div class="input-group">
+                <lable>Phone No:</lable>
+                <input type="tel" placeholder="123 456 7890" id="contact-phone" onkeyup="validatePhone()">
+                <span id="phone-error"></span>
+            </div>
+
+            <div class="input-group">
+                <lable>Email ID:</lable>
+                <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()">
+                <span id="ID-error"></span>
+            </div>
+            
+            <div class="input-group">
+                <lable>Your Message:</lable>
+                <input type="s" placeholder="Enter your message"  id="contact-message" onkeyup="validateMessage()"">
+                <span id="message-error"></span>
+            </div>
+
+            <button o0nclick="return validateFoorm()">Submit</button>
+            <span id="submit-error"></span>
+
+        </form>
+    </div>
+    <script src="Log-In_.js"></script>
+</body>
+</html>
